@@ -23,7 +23,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     let filter = args[0] ? args[0].toLocaleLowerCase() : null;
                     return filter
                         ? value.filter((product) => product.productName.toLocaleLowerCase().indexOf(filter) !== -1)
-                        : null;
+                        : value;
                 }
             };
             ProductFilterPipe = __decorate([

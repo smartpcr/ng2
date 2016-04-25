@@ -32,7 +32,7 @@ System.register(["angular2/core", "angular2/http", "rxjs/Observable"], function(
                 getProducts() {
                     return this._http.get(this._productUrl)
                         .map((response) => response.json())
-                        .do(data => console.log('All: ' + JSON.stringify(data)))
+                        .do((data) => console.log('All: ' + JSON.stringify(data)))
                         .catch(this.handleError);
                 }
                 getProduct(id) {
